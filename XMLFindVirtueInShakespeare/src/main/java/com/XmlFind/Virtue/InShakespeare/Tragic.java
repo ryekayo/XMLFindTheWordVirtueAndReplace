@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 public class Tragic {
 
 	public static void main(String[] args) throws FileNotFoundException {
+		
 		Scanner input = new Scanner(System.in);
 		final Logger log = Logger.getLogger(Tragic.class);
 
