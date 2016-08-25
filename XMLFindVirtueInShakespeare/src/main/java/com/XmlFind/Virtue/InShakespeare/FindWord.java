@@ -21,7 +21,7 @@ public class FindWord {
 
 	private static final Logger log = Logger.getLogger(FindWord.class);
 	private File xml;
-	public String name;
+	private String name;
 	private boolean isFound = false;
 	private int counter = 0;
 
@@ -30,7 +30,7 @@ public class FindWord {
 		readXML(xml);
 	}
 
-	public void readXML(File xml) {
+	private void readXML(File xml) {
 		try {
 			SAXBuilder builder = new SAXBuilder();
 			Document document = builder.build(xml);
@@ -73,7 +73,7 @@ public class FindWord {
 		}
 	}
 
-	public void findVirtue(Element a)
+	private void findVirtue(Element a)
 			throws JDOMException, IOException, TransformerFactoryConfigurationError, TransformerException {
 		SAXBuilder builder = new SAXBuilder();
 		builder.build(xml);
@@ -90,7 +90,7 @@ public class FindWord {
 		}
 	}
 
-	public void createDir() {
+	private void createDir() {
 		// File dir = new File("Change Directory and point to new Folder");
 		// dir.mkdirs();
 	}
